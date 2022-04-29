@@ -5,7 +5,7 @@ namespace task5;
 public class Lightning: Decorator
 {
     
-    public Lightning(Car car): base(car)
+    public Lightning(Component comp): base(comp)
     {
     }
 
@@ -18,7 +18,7 @@ public class Lightning: Decorator
 public class Tribal: Decorator
 {
     
-    public Tribal(Car car): base(car)
+    public Tribal(Component comp): base(comp)
     {
     }
 
@@ -31,7 +31,7 @@ public class Tribal: Decorator
 public class Fire: Decorator
 {
     
-    public Fire(Car car): base(car)
+    public Fire(Component comp): base(comp)
     {
     }
 

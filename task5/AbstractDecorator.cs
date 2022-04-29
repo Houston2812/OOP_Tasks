@@ -2,25 +2,25 @@ using System;
 
 namespace task5;
 
-public abstract class Decorator: Car
+public abstract class Decorator: Component
 {
-    protected Car _car;
+    protected Component _comp;
 
-    public Decorator(Car car)
+    public Decorator(Component comp)
     {
-        this._car = car;
+        this._comp = comp;
     }
 
-    public void SetComponent(Car car)
+    public void SetComponent(Component comp)
     {
-        this._car = car;
+        this._comp = comp;
     }
 
     public override string Operation()
     {
-        if (this._car != null)
+        if (this._comp != null)
         {
-            return this._car.Operation();
+            return this._comp.Operation();
         }
         else
         {

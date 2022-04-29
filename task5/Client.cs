@@ -4,8 +4,8 @@ namespace task5;
 
 public class Client
 {
-    public void ClientCode(Car car)
+    public void ClientCode(Component comp)
     {
-        Console.WriteLine("Result: " + car.Operation());
+        Console.WriteLine("Result: " + comp.Operation());
     }
 }
